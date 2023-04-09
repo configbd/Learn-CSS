@@ -1,7 +1,29 @@
-p{
+
+p.para{
     color: gray;
+}
+p{
+    color: #1ed856;
+}
+
+.para{
+    color:aqua
+}
+/* #para{
+    color: blueviolet;
+} */
+
+p> strong.stro{
+    color:rgb(253, 229, 7)
+}
+p> strong{
+    color:blue
+}
+strong{
+    color:rgb(87, 104, 60)
 }
 p::first-line, h1::first-letter{
     color: red;
     font-size: x-large;
 }
+
