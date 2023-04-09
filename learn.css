@@ -1,0 +1,8 @@
+p{
+    color: gray;
+}
+p::first-line, h1::first-letter{
+    color: red;
+    font-size: x-large;
+}
+
