@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="kata">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="talu"></div>
+      <style>
+        body{
+          margin:0;
+          height:100vh;
+          background:#6592CF;
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          justify-content:center;
+        }
+        #kata{
+           width: 140px;
+          height: 110px;
+          /* background: #dd6b4d; */
+          display:flex;
+          position:relative;
+          
+        }
+        #kata div{
+           width: 140px;
+          height: 110px;
+          background:#6592CF;
+          display:flex;
+          /* outline:1px solid */
+          border-top-left-radius:25px;
+          border-top-right-radius:25px;
+        }
+         #kata div:nth-child(odd){
+            background:#060F55;
+         }
+      
+        #kata div:nth-child(even){
+          background:#6592CF;
+            border-bottom-left-radius:25px;
+            border-bottom-right-radius:25px;
+         }
+         #talu {
+          width: 140px;
+          height: 90px;
+          background: #dd6b4d;
+          box-shadow: 0 -10px 0 #060F55;
+           background:#060F55;
+           border-bottom-left-radius:70px;
+           border-bottom-right-radius:70px;
+      
+         }
+         #talu::after{
+          content:"";
+          width: 20px;
+          height: 70px;
+          bottom:0px;
+          left:190px;
+          background: #060F55;
+          position:absolute;
+         }
+      </style>
+      
+      
+</body>
+</html>

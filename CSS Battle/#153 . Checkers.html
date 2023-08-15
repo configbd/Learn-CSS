@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <style>
+        body{
+          margin:0
+        }
+        .main {
+          width: 100vw;
+          height: 100vh;
+          background: #E3516E;
+          display:grid;
+          grid-template-columns:repeat(5,40px);
+          grid-template-rows:repeat(5,40px);
+          /* align-items:center; */
+          justify-content:center;
+          align-content:center;
+      
+          
+        }
+        .main div:nth-child(odd){
+          background: #FADE8B;
+        }
+      
+          .main div:nth-child(even){
+          position:relative;
+        }
+          .main div:nth-child(even)::before{
+            position:absolute ;
+            top:10px;
+            left:10px;
+            content:"";
+            display:block;
+          width: 20px;
+          height: 20px; 
+          background: #FADE8B;
+            border-radius:100%;
+      
+        }
+        .main div:nth-child(12)::before{
+          visibility:hidden;
+        }
+          .main div:nth-child(14)::before{
+            visibility:hidden;
+        }
+      </style>
+      
+      
+</body>
+</html>
